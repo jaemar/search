@@ -4,8 +4,6 @@ Requirements:
 - Ruby 3
 - Rails 8
 - Elasticsearch v8.18
-- Docker
-- Docker Compose v2
 
 Build and run app
 ```sh
@@ -13,10 +11,17 @@ git clone git@github.com:jaemar/search.git
 cd search
 bundle install
 rails server
+```
 
-# Docker option
-docker compose build
-docker commpose up
+Localhost query
+```
+// Search
+http://localhost:3000/query?keyword=jane
+http://localhost:3000/query?keyword=jane&field=email
+
+// Duplicates
+http://localhost:3000/duplicates
+http://localhost:3000/duplicates?field=full_name
 ```
 
 ### Client Search CLI

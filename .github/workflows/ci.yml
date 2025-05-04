@@ -67,3 +67,6 @@ jobs:
 
       - name: Run tests
         run: rspec
+
+      - name: Codecov coverage
+        uses: codecov/codecov-action@v4
