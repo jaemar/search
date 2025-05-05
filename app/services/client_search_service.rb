@@ -81,7 +81,7 @@ class ClientSearchService
     if value.is_a?(Numeric)
       { term: { field => value } }
     else
-      { wildcard: { field => { value: "*#{value.downcase}*" } } }
+      { wildcard: { "#{field}.keyword" => { value: "*#{value.downcase}*" } } }
     end
   end
 end
