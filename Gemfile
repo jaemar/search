@@ -20,7 +20,7 @@ gem 'thruster', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
-gem 'elasticsearch', '~> 8.18.0'
+gem 'elasticsearch', '~> 9.0.2'
 
 group :development, :test do
   gem 'brakeman', require: false
