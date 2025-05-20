@@ -93,10 +93,10 @@ GEM
     elastic-transport (8.4.0)
       faraday (< 3)
       multi_json
-    elasticsearch (8.18.0)
+    elasticsearch (9.0.3)
       elastic-transport (~> 8.3)
-      elasticsearch-api (= 8.18.0)
-    elasticsearch-api (8.18.0)
+      elasticsearch-api (= 9.0.3)
+    elasticsearch-api (9.0.3)
       multi_json
     erubi (1.13.1)
     faraday (2.13.1)
@@ -117,7 +117,7 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    json (2.11.3)
+    json (2.12.0)
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -312,7 +312,7 @@ DEPENDENCIES
   bootsnap
   brakeman
   debug
-  elasticsearch (~> 8.18.0)
+  elasticsearch (~> 9.0.3)
   jbuilder
   puma (>= 5.0)
   rails (~> 8.0.2)
